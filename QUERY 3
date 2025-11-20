@@ -1,0 +1,7 @@
+SELECT
+    specialization,
+    COUNT(*) AS total_doctors
+FROM
+    doctor
+GROUP BY
+    specialization;
