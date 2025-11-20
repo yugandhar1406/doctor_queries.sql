@@ -1,0 +1,21 @@
+       +--------------------+
+       |      DOCTOR        |
+       +--------------------+
+       | doctor_id (PK)     |
+       | first_name         |
+       | last_name          |
+       | email              |
+       | specialization     |
+       +--------------------+
+                |
+                | 1-to-many
+                |
++-------------------------------+
+|          APPOINTMENT         |
++-------------------------------+
+| appointment_id (PK)          |
+| doctor_id (FK) → DOCTOR      |
+| patient_name                 |
+| appointment_date             |
+| notes                        |
++-------------------------------+
